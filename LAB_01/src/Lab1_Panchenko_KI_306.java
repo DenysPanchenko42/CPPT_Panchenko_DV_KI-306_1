@@ -1,17 +1,18 @@
 import java.io.*;
 import java.util.*;
 /**
-* Клас lab1 реалізує приклад програми до лабораторної роботи №1
+* Class Lab1_Panchenko_KI_306 implements the program for laboratory work #1
 */
-public class lab1
+public class Lab1_Panchenko_KI_306
 {
 /**
-* Статичний метод main є точкою входу в програму
+* The static main method is the entry point to the program
 * 
-* @param args
-* @throws FileNotFoundException
+* @param args is arguments
+* @throws FileNotFoundException is out file
 * 
 */
+
 public static void main(String[] args) throws FileNotFoundException
 {
 int nRows;
