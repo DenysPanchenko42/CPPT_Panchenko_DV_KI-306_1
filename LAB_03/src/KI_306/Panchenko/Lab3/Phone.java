@@ -1,7 +1,7 @@
 /**
-* lab 2 package
+* lab 3 package
 */
-package KI_306.Panchenko.Lab2;
+package KI_306.Panchenko.Lab3;
 import java.io.*;
 /**
 * Class <code>Phone</code> implements phone
@@ -9,7 +9,7 @@ import java.io.*;
 
 public class Phone {
 	private String nameDevice;
-    private boolean isOn;
+	public boolean isOn;
     private int batteryLevel;
     private String numberOfThisPhone;
     private boolean bluetooth;
@@ -371,8 +371,6 @@ public class Phone {
             fout.print("Телефон вимкнено, щоб змінювати гучність ввімкніть його \n");
     	}
     }
-    
-    
     
     /**
     * Method releases used recourses

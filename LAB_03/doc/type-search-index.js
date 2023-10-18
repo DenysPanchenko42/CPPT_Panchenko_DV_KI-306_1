@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"KI_306.Panchenko.Lab3","l":"PhoneMusic"}];updateSearchResults();

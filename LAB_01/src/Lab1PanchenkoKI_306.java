@@ -27,7 +27,7 @@ in.nextLine();
 arr = new char[nRows][];
 for(int i = 0; i < nRows; i++)
 {
-arr[i]= new char[nRows];
+arr[i]= new char[nRows/2];
 }
 System.out.print("\nВведіть символ-заповнювач: ");
 filler = in.nextLine();
@@ -39,8 +39,12 @@ for(int j = 0; j < nRows/2; j++)
 if(filler.length() == 1)
 {
 arr[i][j] = (char) filler.codePointAt(0);
-System.out.print("  " + arr[i][j] );
-fout.print("  " + arr[i][j]);
+if(j%2 == 0){
+System.out.print("+" + arr[i][j] );
+fout.print("+" + arr[i][j]);}
+else {
+System.out.print(" " + arr[i][j] );
+fout.print(" " + arr[i][j]);}
 }
 else if (filler.length() == 0)
 {

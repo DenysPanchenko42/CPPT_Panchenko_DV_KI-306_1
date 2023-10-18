@@ -1,7 +1,7 @@
 /**
-* lab 2 package
+* lab 3 package
 */
-package KI_306.Panchenko.Lab2;
+package KI_306.Panchenko.Lab3;
 import static java.lang.System.out;
 import java.io.*;
 /**
@@ -54,8 +54,6 @@ myPhone.changeNameDevice("Мій пристрій");
 myPhone.info();
 
 myPhone.turnOff();
-
- 
 
 myPhone.dispose();
 
