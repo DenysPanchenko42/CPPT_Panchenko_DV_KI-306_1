@@ -14,51 +14,61 @@ public class PhoneApp
 * @param args is arguments
 * @throws FileNotFoundException is exception 
 */
-public static void main(String[] args) throws FileNotFoundException
-{
-// TODO Auto-generated method stub
-Phone myPhone = new Phone("SamsungA10", 30,"+0987654321", 120);
-
-myPhone.call("+0912345678");
-
-myPhone.turnOn();
-
-myPhone.call("+0912345678");
-
-myPhone.checkBattery();
-
-myPhone.chargeBattery(60);
-
-myPhone.checkBalance();
-
-myPhone.replenishBalance(40);
-
-myPhone.connectDevice("Навушники");
-
-myPhone.bluetoothOn();
-
-myPhone.connectDevice("Навушники");
-
-myPhone.changeLoudness(5,"more");
-
-myPhone.changeLoudness(2,"less");
-
-myPhone.disconnectDevice("Годинник");
-
-myPhone.disconnectDevice("Навушники");
-
-myPhone.sendSMS("0912345678","Привіт");
-
-myPhone.changeNameDevice("Мій пристрій");
-
-myPhone.info();
-
-myPhone.turnOff();
-
- 
-
-myPhone.dispose();
-
-
-}
+	public static void main(String[] args) throws FileNotFoundException
+	{
+	// TODO Auto-generated method stub
+	Phone myPhone1 = new Phone("SamsungA10", 30,"+0987654321", 120);
+	main1();
+	Phone myPhone2 = new Phone("SamsungA12", 30,"+0977654321", 120);
+	Phone myPhone22 = new Phone("SamsungA14", 30,"+0977654321", 120);
+	Phone myPhone3 = new Phone("SamsungA13", 30,"+0987654321", 120);
+	System.out.print(myPhone1.Name098);
+	
+	/*myPhone.call("+0912345678");
+	
+	myPhone.turnOn();
+	
+	myPhone.call("+0912345678");
+	
+	myPhone.checkBattery();
+	
+	myPhone.chargeBattery(60);
+	
+	myPhone.checkBalance();
+	
+	myPhone.replenishBalance(40);
+	
+	myPhone.connectDevice("Навушники");
+	
+	myPhone.bluetoothOn();
+	
+	myPhone.connectDevice("Навушники");
+	
+	myPhone.changeLoudness(5,"more");
+	
+	myPhone.changeLoudness(2,"less");
+	
+	myPhone.disconnectDevice("Годинник");
+	
+	myPhone.disconnectDevice("Навушники");
+	
+	myPhone.sendSMS("0912345678","Привіт");
+	
+	myPhone.changeNameDevice("Мій пристрій");
+	
+	myPhone.info();
+	
+	myPhone.turnOff();
+	
+	 
+	
+	myPhone.dispose();*/
+	
+	
+	}
+	public static void main1() throws FileNotFoundException
+	{
+	// TODO Auto-generated method stub
+	Phone myPhone = new Phone("SamsungA11", 30,"+0987654321", 120);
+	}
 }
