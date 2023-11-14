@@ -4,10 +4,15 @@ package KI_306.Panchenko.Lab5;
 import java.io.*;
 import java.util.*;
 
+/**
+* Class <code>FioApp</code> Inheritance class for Equations class
+* @author Panchenko
+*/
+
 public class FioApp extends Equations{
 
 	/**
-	 * @param args
+	 * @param args is arguments
 	 */
 	public static void main(String[] args) throws FileNotFoundException, IOException
 	{
@@ -27,6 +32,11 @@ public class FioApp extends Equations{
 		System.out.println("Result is: " + obj.getResult());	
 	}
 }
+
+/**
+* Class <code>CalcWFio</code> Implementation of functions for the class FioApp
+* @author Panchenko
+*/
 
 class CalcWFio
 {

@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"KI_306.Panchenko.Lab6","c":"DictionaryDriver","l":"DictionaryDriver()","u":"%3Cinit%3E()"},{"p":"KI_306.Panchenko.Lab6","c":"DictionaryDriver","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
