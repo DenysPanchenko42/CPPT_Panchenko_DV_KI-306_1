@@ -3,6 +3,7 @@
 from Phone import Phone
 from MobilePhone import MobilePhone
 
+
 # Точка входу в програму main
 if __name__ == "__main__":
 

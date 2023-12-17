@@ -17,7 +17,7 @@ public class Phone {
     private String connectedDevices;
     private int loudness;
     private PrintWriter fout;
-    public static String Name098 = " ";
+   
     
     /**
     * Constructor
@@ -34,9 +34,7 @@ public class Phone {
     connectedDevices = "";
     loudness = 0;
     fout = new PrintWriter(new File("Log.txt"));
-    if(numberOfThisPhone.startsWith("+098")) {
-    Name098 += nameDevice + ", ";
-    }
+    
     }
     
     /**
@@ -59,9 +57,7 @@ public class Phone {
     loudness = 0;
     fout = new PrintWriter(new File("Log.txt"));
     
-    if(numberOfThisPhone.startsWith("+098")) {
-        Name098 += nameDevice + ", ";
-        }
+   
     }
     
     /**

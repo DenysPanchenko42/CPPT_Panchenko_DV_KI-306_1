@@ -18,9 +18,25 @@ public class PhoneMusicApp {
 		
 		PhoneMusic myPhoneMusic = new PhoneMusic("Playlist");	
 	
+		myPhoneMusic.playMusic("Song");
+		
+		myPhoneMusic.turnOn();
+		
+		myPhoneMusic.playMusic("Song");
+		
+		myPhoneMusic.listDisplay();
+
+		myPhoneMusic.call("+0912345678");
+		
+		myPhoneMusic.downloading("Song");
+		
 		myPhoneMusic.listDisplay();
 		
-		myPhoneMusic.dispose2();
+		myPhoneMusic.playMusic("Song");
+		
+		myPhoneMusic.turnOff();
+		
+		myPhoneMusic.dispose();
 	
 	}
 

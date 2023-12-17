@@ -75,8 +75,9 @@ class Equations
 {
 /**
 * Method calculates the sin(x)/ctg(8x) = sin(x) * tg(8x) expression
-* @param <code>x</code> Angle in degrees
-* @throws CalcException
+* @param x Angle in degrees
+* @throws CalcException is exception for calculate
+* @return calculation result
 */
 	public static double calculate(double x) throws CalcException
 	{

@@ -39,13 +39,8 @@ for(int j = 0; j < nRows/2; j++)
 if(filler.length() == 1)
 {
 arr[i][j] = (char) filler.codePointAt(0);
-if(j%2 == 0){
-System.out.print("+" + arr[i][j] );
-fout.print("+" + arr[i][j]);}
-else {
 System.out.print(" " + arr[i][j] );
 fout.print(" " + arr[i][j]);}
-}
 else if (filler.length() == 0)
 {
 System.out.print("\nНе введено символ заповнювач");

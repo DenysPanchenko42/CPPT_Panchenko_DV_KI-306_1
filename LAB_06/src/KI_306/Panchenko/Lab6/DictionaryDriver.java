@@ -39,8 +39,10 @@ public class DictionaryDriver {
 	dictionary.clearDictionary();
 	
 	dictionary.PrintAllData();
+
 	}
 
+	
 }
 
 /**
@@ -162,6 +164,8 @@ class Term  implements Data
 	{
 		System.out.print("Термін: " + word + ", розмір: " + size + ";\n\n");
 	}
+	
+	
 }
 
 class Definition implements Data
@@ -199,5 +203,6 @@ class Definition implements Data
 	{
 		System.out.print("Визначення: " + description + ", розмір: " + size  + ";\n\n");
 	}
+	
 }
 

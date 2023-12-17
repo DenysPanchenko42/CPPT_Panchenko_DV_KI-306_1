@@ -13,6 +13,7 @@ public class FioApp extends Equations{
 
 	/**
 	 * @param args is arguments
+	 * @throws FileNotFoundException is exception 
 	 */
 	public static void main(String[] args) throws FileNotFoundException, IOException
 	{
@@ -29,7 +30,9 @@ public class FioApp extends Equations{
 		obj.readResBin("BinRes.bin");
 		System.out.println("Result is: " + obj.getResult());
 		obj.readResTxt("textRes.txt");
-		System.out.println("Result is: " + obj.getResult());	
+		System.out.println("Result is: " + obj.getResult());
+		
+		
 	}
 }
 
@@ -40,12 +43,18 @@ public class FioApp extends Equations{
 
 class CalcWFio
 {
+	
+	
+
 	public void writeResTxt(String fName) throws FileNotFoundException
 	{
 		PrintWriter f = new PrintWriter(fName);
-		f.printf("%.15f ",result);
+		f.printf("%.17f ",result);
 		f.close();
 	}
+	
+	
+	
 	public void readResTxt(String fName)
 	{
 		try

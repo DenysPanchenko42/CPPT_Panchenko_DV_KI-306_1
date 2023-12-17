@@ -16,7 +16,7 @@ public class Phone {
     private double balance;
     private String connectedDevices;
     private int loudness;
-    private PrintWriter fout;
+    public PrintWriter fout;
     
     /**
     * Constructor

@@ -13,14 +13,8 @@ def writeResTxt(fName, result):
 # Читання даних з текстового файлу
 def readResTxt(fName):
     result = 0.0
-    try:
-       if os.path.exists(fName):
-          with open(fName, 'r') as f:
-             result = f.read()
-       else:
-        raise FileNotFoundError(f"Файл {fName} не знайдено.")
-    except FileNotFoundError as e:
-        print(e)
+    with open(fName, 'r') as f:
+        result = f.read()
     return result
 
 # Запис даних в бінарний файл
@@ -31,14 +25,8 @@ def writeResBin(fName, result):
 # Читання даних з бінарного файлу
 def readResBin(fName):
     result = 0.0
-    try:
-        if os.path.exists(fName):
-            with open(fName, 'rb') as f:
-                result = struct.unpack('f', f.read())[0]
-        else:
-            raise FileNotFoundError(f"Файл {fName} не знайдено.")
-    except FileNotFoundError as e:
-        print(e)
+    with open(fName, 'rb') as f:
+        result = struct.unpack('f', f.read())[0]
     return result
 
 # Обчислення виразу

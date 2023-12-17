@@ -18,7 +18,7 @@ public class PhoneMusic extends Phone implements MusicPlayer{
 	
 	private String NameList;
 	private String MusicList;
-	private PrintWriter fout2;
+	
 	/**
 	* Constructor
 	* @throws FileNotFoundException is exception 
@@ -27,7 +27,7 @@ public class PhoneMusic extends Phone implements MusicPlayer{
     {
 	NameList = "My list";
 	MusicList = "";
-	fout2 = new PrintWriter(new File("Music.txt"));
+	
     }
 
 	/**
@@ -39,7 +39,7 @@ public class PhoneMusic extends Phone implements MusicPlayer{
 	{
 	this.NameList = NameList;
 	MusicList = "";
-	fout2 = new PrintWriter(new File("Music.txt"));
+	
 	}
 	
 	/**
@@ -49,19 +49,19 @@ public class PhoneMusic extends Phone implements MusicPlayer{
 	@Override
     public void playMusic(String song) {
 		System.out.println(" \n");
-		fout2.print(" \n");
+		fout.print(" \n");
         if (super.isOn) {
         	if (MusicList.contains(song)) {
         		System.out.println("Відтворення пісні: " + song + " \n");
-        		fout2.print("Відтворення пісні: " + song + " \n");
+        		fout.print("Відтворення пісні: " + song + " \n");
         	}
         	else {
         		System.out.println("Пісні під назвою: " + song + " не знайдено \n");
-        		fout2.print("Пісні під назвою: " + song + " не знайдено \n");
+        		fout.print("Пісні під назвою: " + song + " не знайдено \n");
         	}
         } else {
             System.out.println("Телефон вимкнено, щоб відтворити музику ввімкніть його \n");
-            fout2.print("Телефон вимкнено, щоб відтворити музику ввімкніть його \n");
+            fout.print("Телефон вимкнено, щоб відтворити музику ввімкніть його \n");
         }
     }
 	
@@ -71,7 +71,7 @@ public class PhoneMusic extends Phone implements MusicPlayer{
      */
 	public void downloading(String song) {
 		System.out.println(" \n");
-		fout2.print(" \n");
+		fout.print(" \n");
 		if (super.isOn) {
 			if(MusicList == "") {
 				MusicList += song;
@@ -80,42 +80,30 @@ public class PhoneMusic extends Phone implements MusicPlayer{
 				MusicList += ", " + song;
 			}
 			System.out.println("Пісню " + song + " завантажено \n");
-            fout2.print("Пісню " + song + " завантажено \n");
+            fout.print("Пісню " + song + " завантажено \n");
 			
 		} else {
             System.out.println("Телефон вимкнено, щоб завантажити музику ввімкніть його \n");
-            fout2.print("Телефон вимкнено, щоб завантажити музику ввімкніть його \n");
+            fout.print("Телефон вимкнено, щоб завантажити музику ввімкніть його \n");
         }
 	}
-	
 	
 	/**
      * Method for list display
      */
 	public void listDisplay() {
 		System.out.println(" \n");
-		fout2.print(" \n");
+		fout.print(" \n");
 		if (super.isOn) {
 			System.out.println("Плейлист " + NameList + " : \n");
-            fout2.print("Плейлист " + NameList + " : \n");
+            fout.print("Плейлист " + NameList + " : \n");
 			System.out.println(MusicList + " \n");
-            fout2.print(MusicList + " \n");
+            fout.print(MusicList + " \n");
 			
 		} else {
             System.out.println("Телефон вимкнено, щоб подивитись список пісень ввімкніть його \n");
-            fout2.print("Телефон вимкнено, щоб подивитись список пісень ввімкніть його \n");
+            fout.print("Телефон вимкнено, щоб подивитись список пісень ввімкніть його \n");
         }
 	}
-	
-	
-	 /**
-	 * Method releases used recourses
-	 */
-	 public void dispose2()
-	 { fout2.close(); }
-	
-	
-	
-	
-	
+
 }

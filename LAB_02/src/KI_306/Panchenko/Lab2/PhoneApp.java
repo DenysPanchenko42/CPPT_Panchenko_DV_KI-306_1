@@ -17,14 +17,10 @@ public class PhoneApp
 	public static void main(String[] args) throws FileNotFoundException
 	{
 	// TODO Auto-generated method stub
-	Phone myPhone1 = new Phone("SamsungA10", 30,"+0987654321", 120);
-	main1();
-	Phone myPhone2 = new Phone("SamsungA12", 30,"+0977654321", 120);
-	Phone myPhone22 = new Phone("SamsungA14", 30,"+0977654321", 120);
-	Phone myPhone3 = new Phone("SamsungA13", 30,"+0987654321", 120);
-	System.out.print(myPhone1.Name098);
+	Phone myPhone = new Phone("SamsungA10", 30,"+0987654321", 120);
 	
-	/*myPhone.call("+0912345678");
+	
+	myPhone.call("+0912345678");
 	
 	myPhone.turnOn();
 	
@@ -60,15 +56,7 @@ public class PhoneApp
 	
 	myPhone.turnOff();
 	
-	 
+	myPhone.dispose();
 	
-	myPhone.dispose();*/
-	
-	
-	}
-	public static void main1() throws FileNotFoundException
-	{
-	// TODO Auto-generated method stub
-	Phone myPhone = new Phone("SamsungA11", 30,"+0987654321", 120);
-	}
+	}	
 }

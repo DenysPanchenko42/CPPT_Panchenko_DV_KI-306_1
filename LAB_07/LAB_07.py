@@ -20,6 +20,7 @@ for i in range(rows_num):
             lst[i].append(ord(' '))
         else:  
             lst[i].append(ord(filler))
+
             
 # Виведення матриці
 for i in range(rows_num):
